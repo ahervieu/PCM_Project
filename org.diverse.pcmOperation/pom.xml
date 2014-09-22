@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.diverse.pcm</groupId>
+        <artifactId>pcm-scrapper.root</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.diverse.pcm</groupId>
+    <artifactId>org.diverse.pcmOperation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.diverse.pcm</groupId>
+            <artifactId>pcm-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kevoree.modeling</groupId>
+            <artifactId>org.kevoree.modeling.microframework</artifactId>
+            <version>${kmf.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kevoree.modeling</groupId>
+            <artifactId>org.kevoree.modeling.microframework.datastores.leveldb</artifactId>
+            <version>${kmf.version}</version>
+        </dependency>
+
+</dependencies>
+</project>

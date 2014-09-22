@@ -1,0 +1,89 @@
+<component name="libraryTable">
+  <library name="Maven: org.kevoree.modeling:org.kevoree.modeling.microframework:3.5.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/modeling/org.kevoree.modeling.microframework/3.5.1/org.kevoree.modeling.microframework-3.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/modeling/org.kevoree.modeling.microframework/3.5.1/org.kevoree.modeling.microframework-3.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/modeling/org.kevoree.modeling.microframework/3.5.1/org.kevoree.modeling.microframework-3.5.1-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/cpp/org.kevoree.modeling.cpp.generator/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.http/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.jedis/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.mapdb/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.leveldb/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.redisson/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.websocket/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.GC4MDE/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.diva/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.kt/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.kevoree/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.thingml/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.legacy/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.modeling.benchmarker/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.benckmarker.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.kevoree.js.plain/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.eclipseproject/test" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/org.kevoree.modeling.scala.generator/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/org.kevoree.modeling.scala.generator.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/generated/org.kevoree.modeling.sosym.eval.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.fsm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.fsm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.kermeta/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.kevoree/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.thingml/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.dsl/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.idea/gen" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.idea/src" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.gradlePlugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.generator/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.standalone/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.framework.ui.graph/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.haxe/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.java/src/main/kotlin" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.learn/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.generator.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/cpp/org.kevoree.modeling.cpp.generator/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.http/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.jedis/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.mapdb/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.leveldb/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.redisson/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/datastores/org.kevoree.modeling.microframework.datastores.websocket/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.GC4MDE/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.diva/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.kt/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.kevoree/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.thingml/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.legacy/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.modeling.benchmarker/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.benckmarker.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.kevoree.js.plain/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/samples/org.kevoree.modeling.sample.fsm.eclipseproject/test" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/org.kevoree.modeling.scala.generator/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/_deprecated_/org.kevoree.modeling.scala.generator.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/generated/org.kevoree.modeling.sosym.eval.mavenplugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.fsm/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.fsm/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.kermeta/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.kevoree/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/sosym-evaluations/org.kevoree.modeling.sosym.eval.thingml/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.dsl/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.idea/gen" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.idea/src" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.gradlePlugin/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.generator/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.standalone/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.framework.ui.graph/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.haxe/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.java/src/main/kotlin" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.microframework.learn/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../kevoree-modeling-framework/org.kevoree.modeling.kotlin.generator.mavenplugin/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
