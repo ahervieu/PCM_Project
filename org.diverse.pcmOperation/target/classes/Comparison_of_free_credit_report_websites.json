@@ -1,0 +1,336 @@
+
+{"class":"kpcmmm.kPCM@9241391521411043948803","description":"","generated_KMF_ID":"9241391521411043948803","matrices":[
+{"class":"kpcmmm.kMatrix@16798135791411043948803","name":"","id":"_0","generated_KMF_ID":"16798135791411043948803","cells":[
+{"class":"kpcmmm.kHeader@5810534201411043948803","colspan":"1","note":"","rowspan":"1","name":"0,2: cost of credit score","link":"","column":"2","row":"0","verbatim":"Cost of credit score","generated_KMF_ID":"5810534201411043948803","concept":["concepts[15138260961411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@11308230671411043948803","colspan":"1","note":"","rowspan":"1","name":"2,3: no","link":"","column":"3","row":"2","verbatim":"No","generated_KMF_ID":"11308230671411043948803","concepts":[],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[16818029061411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@4466161391411043948803","confident":"true","name":"No","verbatim":"No","value":"false","generated_KMF_ID":"4466161391411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@2137395961411043948803","colspan":"1","note":"","rowspan":"1","name":"3,3: no","link":"","column":"3","row":"3","verbatim":"No","generated_KMF_ID":"2137395961411043948803","concepts":[],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[16818029061411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@6058031591411043948803","confident":"true","name":"No","verbatim":"No","value":"false","generated_KMF_ID":"6058031591411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@20750967431411043948803","colspan":"1","note":"","rowspan":"1","name":"4,2: free; once monthly","link":"","column":"2","row":"4","verbatim":"Free; once monthly","generated_KMF_ID":"20750967431411043948803","concepts":["concepts[14702125981411043948803]","concepts[19438635601411043948803]"],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[15138260961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@190575211411043948803","confident":"false","generated_KMF_ID":"190575211411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@9532766591411043948803","confident":"false","name":"once monthly","verbatim":"once monthly","generated_KMF_ID":"9532766591411043948803","concept":["concepts[14702125981411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@11101088001411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"11101088001411043948803","concept":["concepts[19438635601411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@10991152751411043948803","colspan":"1","note":"","rowspan":"1","name":"2,1: free proprietary credit report summary","link":"","column":"1","row":"2","verbatim":"Free proprietary credit report summary","generated_KMF_ID":"10991152751411043948803","concepts":["concepts[900669141411043948803]"],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[11071583831411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@16996548781411043948803","confident":"false","name":"Free proprietary credit report summary","verbatim":"Free proprietary credit report summary","generated_KMF_ID":"16996548781411043948803","concept":["concepts[900669141411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kHeader@21078768371411043948803","colspan":"1","note":"","rowspan":"1","name":"0,1: cost of credit report","link":"","column":"1","row":"0","verbatim":"Cost of credit report","generated_KMF_ID":"21078768371411043948803","concept":["concepts[11071583831411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@2441566751411043948803","colspan":"1","note":"","rowspan":"1","name":"4,5: experian (bare)","link":"","column":"5","row":"4","verbatim":"Experian (bare)","generated_KMF_ID":"2441566751411043948803","concepts":["concepts[12588671851411043948803]","concepts[11477121811411043948803]"],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[8701810191411043948803]"],"interpretation":[
+{"class":"kpcmmm.kPartial@13641383181411043948803","confident":"false","generated_KMF_ID":"13641383181411043948803","condition":[
+{"class":"kpcmmm.kVariabilityConceptRef@10653853571411043948803","confident":"false","name":"bare","verbatim":"bare","generated_KMF_ID":"10653853571411043948803","concept":["concepts[12588671851411043948803]"]}
+],"argument":[
+{"class":"kpcmmm.kVariabilityConceptRef@19307966001411043948803","confident":"false","name":"Experian","verbatim":"Experian","generated_KMF_ID":"19307966001411043948803","concept":["concepts[11477121811411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kHeader@1782270031411043948803","colspan":"1","note":"","rowspan":"1","name":"0,4: social security number required?","link":"","column":"4","row":"0","verbatim":"Social Security Number required?","generated_KMF_ID":"1782270031411043948803","concept":["concepts[16082596961411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@5582010021411043948803","colspan":"1","note":"","rowspan":"1","name":"1,1: free; one from each agency every 12 months","link":"","column":"1","row":"1","verbatim":"Free; one from each agency every 12 months","generated_KMF_ID":"5582010021411043948803","concepts":["concepts[21206726721411043948803]","concepts[19438635601411043948803]"],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[11071583831411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@19944308281411043948803","confident":"false","generated_KMF_ID":"19944308281411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@8727971801411043948803","confident":"false","name":"one from each agency every 12 months","verbatim":"one from each agency every 12 months","generated_KMF_ID":"8727971801411043948803","concept":["concepts[21206726721411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@18299084431411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"18299084431411043948803","concept":["concepts[19438635601411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@14878007311411043948803","colspan":"1","note":"","rowspan":"1","name":"5,1: free; once every 6 months","link":"","column":"1","row":"5","verbatim":"Free; once every 6 months","generated_KMF_ID":"14878007311411043948803","concepts":["concepts[20682304901411043948803]","concepts[19438635601411043948803]"],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[11071583831411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@9566916821411043948803","confident":"false","generated_KMF_ID":"9566916821411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@3037286821411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"3037286821411043948803","concept":["concepts[19438635601411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@7576643371411043948803","confident":"false","name":"once every 6 months","verbatim":"once every 6 months","generated_KMF_ID":"7576643371411043948803","concept":["concepts[20682304901411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kHeader@11851298071411043948803","colspan":"1","note":"","rowspan":"1","name":"0,3: credit card required?","link":"","column":"3","row":"0","verbatim":"Credit card required?","generated_KMF_ID":"11851298071411043948803","concept":["concepts[16818029061411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@18111043331411043948803","colspan":"1","note":"","rowspan":"1","name":"1,2: fico score (equifax) = $7.95; experian score = $7.","link":"","column":"2","row":"1","verbatim":"FICO score (Equifax) = $7.95;\n Experian score = $7.95;\n TransUnion score = $7.95","generated_KMF_ID":"18111043331411043948803","concepts":["concepts[10557709111411043948803]","concepts[16575686591411043948803]","concepts[13688510541411043948803]"],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[15138260961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@14725261911411043948803","confident":"false","generated_KMF_ID":"14725261911411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@12014478341411043948803","confident":"false","name":"TransUnion score = $7.95","verbatim":"TransUnion score = $7.95","generated_KMF_ID":"12014478341411043948803","concept":["concepts[10557709111411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@8033529601411043948803","confident":"false","name":"FICO score (Equifax) = $7.95","verbatim":"FICO score (Equifax) = $7.95","generated_KMF_ID":"8033529601411043948803","concept":["concepts[16575686591411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@8219952931411043948803","confident":"false","name":"Experian score = $7.95","verbatim":"Experian score = $7.95","generated_KMF_ID":"8219952931411043948803","concept":["concepts[13688510541411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@8258224211411043948803","colspan":"1","note":"","rowspan":"1","name":"3,2: free; once weekly","link":"","column":"2","row":"3","verbatim":"Free; once weekly","generated_KMF_ID":"8258224211411043948803","concepts":["concepts[19438635601411043948803]","concepts[21031248901411043948803]"],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[15138260961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@5030659241411043948803","confident":"false","generated_KMF_ID":"5030659241411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@19200365841411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"19200365841411043948803","concept":["concepts[19438635601411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@11076676131411043948803","confident":"false","name":"once weekly","verbatim":"once weekly","generated_KMF_ID":"11076676131411043948803","concept":["concepts[21031248901411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kHeader@19527641391411043948803","colspan":"1","note":"","rowspan":"1","name":"1,0: annualcreditreport.com","link":"","column":"0","row":"1","verbatim":"AnnualCreditReport.com","generated_KMF_ID":"19527641391411043948803","concept":["concepts[13344208991411043948803]"]}
+,
+{"class":"kpcmmm.kExtra@957261831411043948803","colspan":"1","note":"","rowspan":"1","name":"0,0: name/website","link":"","column":"0","row":"0","verbatim":"Name/Website","generated_KMF_ID":"957261831411043948803"}
+,
+{"class":"kpcmmm.kValuedCell@16086787311411043948803","colspan":"1","note":"","rowspan":"1","name":"1,5: equifax, experian & transunion","link":"","column":"5","row":"1","verbatim":"Equifax, Experian & Transunion","generated_KMF_ID":"16086787311411043948803","concepts":["concepts[17985214251411043948803]","concepts[3884178481411043948803]"],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[8701810191411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@19701703881411043948803","confident":"false","generated_KMF_ID":"19701703881411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@14444410121411043948803","confident":"false","name":"Equifax","verbatim":"Equifax","generated_KMF_ID":"14444410121411043948803","concept":["concepts[17985214251411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@4699203551411043948803","confident":"false","name":"Experian & Transunion","verbatim":"Experian & Transunion","generated_KMF_ID":"4699203551411043948803","concept":["concepts[3884178481411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@8949076381411043948803","colspan":"1","note":"","rowspan":"1","name":"3,1: free proprietary credit report summary","link":"","column":"1","row":"3","verbatim":"Free proprietary credit report summary","generated_KMF_ID":"8949076381411043948803","concepts":["concepts[900669141411043948803]"],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[11071583831411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@10212136501411043948803","confident":"false","name":"Free proprietary credit report summary","verbatim":"Free proprietary credit report summary","generated_KMF_ID":"10212136501411043948803","concept":["concepts[900669141411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@7714548811411043948803","colspan":"1","note":"","rowspan":"1","name":"3,6: transunion's transrisk new account score. vantages","link":"","column":"6","row":"3","verbatim":"Transunion's TransRisk New Account score. VantageScore.","generated_KMF_ID":"7714548811411043948803","concepts":["concepts[11859199951411043948803]"],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[10256879221411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@8144208671411043948803","confident":"false","name":"Transunion's TransRisk New Account score. VantageScore.","verbatim":"Transunion's TransRisk New Account score. VantageScore.","generated_KMF_ID":"8144208671411043948803","concept":["concepts[11859199951411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@4752081741411043948803","colspan":"1","note":"","rowspan":"1","name":"4,1: free experian credit report summary","link":"","column":"1","row":"4","verbatim":"Free Experian credit report summary","generated_KMF_ID":"4752081741411043948803","concepts":["concepts[11134350241411043948803]"],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[11071583831411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@18004299001411043948803","confident":"false","name":"Free Experian credit report summary","verbatim":"Free Experian credit report summary","generated_KMF_ID":"18004299001411043948803","concept":["concepts[11134350241411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@11297176251411043948803","colspan":"1","note":"","rowspan":"1","name":"2,2: free; once monthly","link":"","column":"2","row":"2","verbatim":"Free; once monthly","generated_KMF_ID":"11297176251411043948803","concepts":["concepts[14702125981411043948803]","concepts[19438635601411043948803]"],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[15138260961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@14277807721411043948803","confident":"false","generated_KMF_ID":"14277807721411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@11334363611411043948803","confident":"false","name":"once monthly","verbatim":"once monthly","generated_KMF_ID":"11334363611411043948803","concept":["concepts[14702125981411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@2771033011411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"2771033011411043948803","concept":["concepts[19438635601411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@7226745391411043948803","colspan":"1","note":"","rowspan":"1","name":"4,6: experian's national equivalency score","link":"","column":"6","row":"4","verbatim":"Experian's National Equivalency Score","generated_KMF_ID":"7226745391411043948803","concepts":["concepts[34073361411043948803]"],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[10256879221411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@16993653281411043948803","confident":"false","name":"Experian's National Equivalency Score","verbatim":"Experian's National Equivalency Score","generated_KMF_ID":"16993653281411043948803","concept":["concepts[34073361411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kHeader@5061114031411043948803","colspan":"1","note":"","rowspan":"1","name":"3,0: credit karma","link":"","column":"0","row":"3","verbatim":"Credit Karma","generated_KMF_ID":"5061114031411043948803","concept":["concepts[968507601411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@15550067231411043948803","colspan":"1","note":"","rowspan":"1","name":"5,3: no","link":"","column":"3","row":"5","verbatim":"No","generated_KMF_ID":"15550067231411043948803","concepts":[],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[16818029061411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@8100784841411043948803","confident":"true","name":"No","verbatim":"No","value":"false","generated_KMF_ID":"8100784841411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@3373781241411043948803","colspan":"1","note":"","rowspan":"1","name":"5,5: equifax","link":"","column":"5","row":"5","verbatim":"Equifax","generated_KMF_ID":"3373781241411043948803","concepts":["concepts[17985214251411043948803]"],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[8701810191411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@14700545311411043948803","confident":"false","name":"Equifax","verbatim":"Equifax","generated_KMF_ID":"14700545311411043948803","concept":["concepts[17985214251411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kHeader@17067567231411043948803","colspan":"1","note":"","rowspan":"1","name":"2,0: credit.com","link":"","column":"0","row":"2","verbatim":"Credit.com","generated_KMF_ID":"17067567231411043948803","concept":["concepts[19576580561411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@8753479891411043948803","colspan":"1","note":"","rowspan":"1","name":"2,5: experian (bare)","link":"","column":"5","row":"2","verbatim":"Experian (bare)","generated_KMF_ID":"8753479891411043948803","concepts":["concepts[12588671851411043948803]","concepts[11477121811411043948803]"],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[8701810191411043948803]"],"interpretation":[
+{"class":"kpcmmm.kPartial@15484365641411043948803","confident":"false","generated_KMF_ID":"15484365641411043948803","condition":[
+{"class":"kpcmmm.kVariabilityConceptRef@16912400961411043948803","confident":"false","name":"bare","verbatim":"bare","generated_KMF_ID":"16912400961411043948803","concept":["concepts[12588671851411043948803]"]}
+],"argument":[
+{"class":"kpcmmm.kVariabilityConceptRef@10622206801411043948803","confident":"false","name":"Experian","verbatim":"Experian","generated_KMF_ID":"10622206801411043948803","concept":["concepts[11477121811411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@19644663281411043948803","colspan":"1","note":"","rowspan":"1","name":"1,4: yes","link":"","column":"4","row":"1","verbatim":"Yes","generated_KMF_ID":"19644663281411043948803","concepts":[],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[16082596961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@11860391371411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"11860391371411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@4594115711411043948803","colspan":"1","note":"","rowspan":"1","name":"3,5: transunion (bare)","link":"","column":"5","row":"3","verbatim":"Transunion (bare)","generated_KMF_ID":"4594115711411043948803","concepts":["concepts[12588671851411043948803]","concepts[5528756871411043948803]"],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[8701810191411043948803]"],"interpretation":[
+{"class":"kpcmmm.kPartial@13115556571411043948803","confident":"false","generated_KMF_ID":"13115556571411043948803","condition":[
+{"class":"kpcmmm.kVariabilityConceptRef@7535133891411043948803","confident":"false","name":"bare","verbatim":"bare","generated_KMF_ID":"7535133891411043948803","concept":["concepts[12588671851411043948803]"]}
+],"argument":[
+{"class":"kpcmmm.kVariabilityConceptRef@19735365501411043948803","confident":"false","name":"Transunion","verbatim":"Transunion","generated_KMF_ID":"19735365501411043948803","concept":["concepts[5528756871411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@14131371561411043948803","colspan":"1","note":"","rowspan":"1","name":"5,2: free; once every 6 months","link":"","column":"2","row":"5","verbatim":"Free; once every 6 months","generated_KMF_ID":"14131371561411043948803","concepts":["concepts[20682304901411043948803]","concepts[19438635601411043948803]"],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[15138260961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@16138607941411043948803","confident":"false","generated_KMF_ID":"16138607941411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@12422460621411043948803","confident":"false","name":"Free","verbatim":"Free","generated_KMF_ID":"12422460621411043948803","concept":["concepts[19438635601411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@14897787811411043948803","confident":"false","name":"once every 6 months","verbatim":"once every 6 months","generated_KMF_ID":"14897787811411043948803","concept":["concepts[20682304901411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kHeader@12810191791411043948803","colspan":"1","note":"","rowspan":"1","name":"0,6: score type","link":"","column":"6","row":"0","verbatim":"Score type","generated_KMF_ID":"12810191791411043948803","concept":["concepts[10256879221411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@12139546121411043948803","colspan":"1","note":"","rowspan":"1","name":"1,3: no (for credit report)/ yes (for credit score)","link":"","column":"3","row":"1","verbatim":"No (for credit report)/\nYes (for credit score)","generated_KMF_ID":"12139546121411043948803","concepts":["concepts[16500086781411043948803]","concepts[18352472741411043948803]"],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[16818029061411043948803]"],"interpretation":[
+{"class":"kpcmmm.kPartial@19579038611411043948803","confident":"false","generated_KMF_ID":"19579038611411043948803","condition":[
+{"class":"kpcmmm.kAnd@7664189721411043948803","confident":"false","generated_KMF_ID":"7664189721411043948803","contraints":[
+{"class":"kpcmmm.kPartial@10995523891411043948803","confident":"false","generated_KMF_ID":"10995523891411043948803","condition":[
+{"class":"kpcmmm.kVariabilityConceptRef@5854867951411043948803","confident":"false","name":"(for credit score","verbatim":"(for credit score","generated_KMF_ID":"5854867951411043948803","concept":["concepts[18352472741411043948803]"]}
+],"argument":[
+{"class":"kpcmmm.kBoolean@12933952851411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"12933952851411043948803"}
+]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@4100549391411043948803","confident":"false","name":"for credit report)","verbatim":"for credit report)","generated_KMF_ID":"4100549391411043948803","concept":["concepts[16500086781411043948803]"]}
+]}
+],"argument":[
+{"class":"kpcmmm.kBoolean@18269608191411043948803","confident":"true","name":"No","verbatim":"No","value":"false","generated_KMF_ID":"18269608191411043948803"}
+]}
+]}
+,
+{"class":"kpcmmm.kHeader@15182194981411043948803","colspan":"1","note":"","rowspan":"1","name":"5,0: quizzle","link":"","column":"0","row":"5","verbatim":"Quizzle","generated_KMF_ID":"15182194981411043948803","concept":["concepts[2639078221411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@11652922731411043948803","colspan":"1","note":"","rowspan":"1","name":"4,4: yes","link":"","column":"4","row":"4","verbatim":"Yes","generated_KMF_ID":"11652922731411043948803","concepts":[],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[16082596961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@19031453211411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"19031453211411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@5219175491411043948803","colspan":"1","note":"","rowspan":"1","name":"2,6: experian's national equivalency score","link":"","column":"6","row":"2","verbatim":"Experian's National Equivalency Score","generated_KMF_ID":"5219175491411043948803","concepts":["concepts[34073361411043948803]"],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[10256879221411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@17088034221411043948803","confident":"false","name":"Experian's National Equivalency Score","verbatim":"Experian's National Equivalency Score","generated_KMF_ID":"17088034221411043948803","concept":["concepts[34073361411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@17949068961411043948803","colspan":"1","note":"","rowspan":"1","name":"4,3: no","link":"","column":"3","row":"4","verbatim":"No","generated_KMF_ID":"17949068961411043948803","concepts":[],"myHeaderProducts":["concepts[10298026561411043948803]"],"myHeaderFeatures":["concepts[16818029061411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@2103723121411043948803","confident":"true","name":"No","verbatim":"No","value":"false","generated_KMF_ID":"2103723121411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@13593375411411043948803","colspan":"1","note":"","rowspan":"1","name":"5,6: vantagescore","link":"","column":"6","row":"5","verbatim":"VantageScore","generated_KMF_ID":"13593375411411043948803","concepts":["concepts[20255408771411043948803]"],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[10256879221411043948803]"],"interpretation":[
+{"class":"kpcmmm.kVariabilityConceptRef@14786413561411043948803","confident":"false","name":"VantageScore","verbatim":"VantageScore","generated_KMF_ID":"14786413561411043948803","concept":["concepts[20255408771411043948803]"]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@19101631371411043948803","colspan":"1","note":"","rowspan":"1","name":"1,6: fico (proprietary from equifax, not fico), experia","link":"","column":"6","row":"1","verbatim":"FICO (proprietary from Equifax, not FICO), Experian & Transunion","generated_KMF_ID":"19101631371411043948803","concepts":["concepts[19442939171411043948803]","concepts[3884178481411043948803]","concepts[9210147561411043948803]"],"myHeaderProducts":["concepts[13344208991411043948803]"],"myHeaderFeatures":["concepts[10256879221411043948803]"],"interpretation":[
+{"class":"kpcmmm.kAnd@8157523561411043948803","confident":"false","generated_KMF_ID":"8157523561411043948803","contraints":[
+{"class":"kpcmmm.kVariabilityConceptRef@5584875311411043948803","confident":"false","name":"FICO (proprietary from Equifax","verbatim":"FICO (proprietary from Equifax","generated_KMF_ID":"5584875311411043948803","concept":["concepts[9210147561411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@16073863201411043948803","confident":"false","name":"not FICO)","verbatim":"not FICO)","generated_KMF_ID":"16073863201411043948803","concept":["concepts[19442939171411043948803]"]}
+,
+{"class":"kpcmmm.kVariabilityConceptRef@5608412021411043948803","confident":"false","name":"Experian & Transunion","verbatim":"Experian & Transunion","generated_KMF_ID":"5608412021411043948803","concept":["concepts[3884178481411043948803]"]}
+]}
+]}
+,
+{"class":"kpcmmm.kValuedCell@6097316691411043948803","colspan":"1","note":"","rowspan":"1","name":"3,4: yes","link":"","column":"4","row":"3","verbatim":"Yes","generated_KMF_ID":"6097316691411043948803","concepts":[],"myHeaderProducts":["concepts[968507601411043948803]"],"myHeaderFeatures":["concepts[16082596961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@10005631001411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"10005631001411043948803"}
+]}
+,
+{"class":"kpcmmm.kValuedCell@8010793371411043948803","colspan":"1","note":"","rowspan":"1","name":"2,4: yes","link":"","column":"4","row":"2","verbatim":"Yes","generated_KMF_ID":"8010793371411043948803","concepts":[],"myHeaderProducts":["concepts[19576580561411043948803]"],"myHeaderFeatures":["concepts[16082596961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@8968617131411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"8968617131411043948803"}
+]}
+,
+{"class":"kpcmmm.kHeader@20870452131411043948803","colspan":"1","note":"","rowspan":"1","name":"4,0: credit sesame","link":"","column":"0","row":"4","verbatim":"Credit Sesame","generated_KMF_ID":"20870452131411043948803","concept":["concepts[10298026561411043948803]"]}
+,
+{"class":"kpcmmm.kValuedCell@1860535431411043948803","colspan":"1","note":"","rowspan":"1","name":"5,4: yes","link":"","column":"4","row":"5","verbatim":"Yes","generated_KMF_ID":"1860535431411043948803","concepts":[],"myHeaderProducts":["concepts[2639078221411043948803]"],"myHeaderFeatures":["concepts[16082596961411043948803]"],"interpretation":[
+{"class":"kpcmmm.kBoolean@2157058291411043948803","confident":"true","name":"Yes","verbatim":"Yes","value":"true","generated_KMF_ID":"2157058291411043948803"}
+]}
+,
+{"class":"kpcmmm.kHeader@1739490451411043948803","colspan":"1","note":"","rowspan":"1","name":"0,5: report type","link":"","column":"5","row":"0","verbatim":"Report type","generated_KMF_ID":"1739490451411043948803","concept":["concepts[8701810191411043948803]"]}
+]}
+],"concepts":[
+{"class":"kpcmmm.kFeature@15138260961411043948803","name":"Cost of credit score","generated_KMF_ID":"15138260961411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[20750967431411043948803]","matrices[16798135791411043948803]/cells[18111043331411043948803]","matrices[16798135791411043948803]/cells[8258224211411043948803]","matrices[16798135791411043948803]/cells[14131371561411043948803]","matrices[16798135791411043948803]/cells[11297176251411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[4839222181411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@10557709111411043948803","name":"TransUnion score = $7.95","generated_KMF_ID":"10557709111411043948803","constraints":["matrices[16798135791411043948803]/cells[18111043331411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[15782256431411043948803]"]}
+,
+{"class":"kpcmmm.kProduct@2639078221411043948803","name":"Quizzle","generated_KMF_ID":"2639078221411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[13593375411411043948803]","matrices[16798135791411043948803]/cells[15550067231411043948803]","matrices[16798135791411043948803]/cells[3373781241411043948803]","matrices[16798135791411043948803]/cells[1860535431411043948803]","matrices[16798135791411043948803]/cells[14131371561411043948803]","matrices[16798135791411043948803]/cells[14878007311411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@12588671851411043948803","name":"bare","generated_KMF_ID":"12588671851411043948803","constraints":["matrices[16798135791411043948803]/cells[2441566751411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]","matrices[16798135791411043948803]/cells[4594115711411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[572136871411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@5528756871411043948803","name":"Transunion","generated_KMF_ID":"5528756871411043948803","constraints":["matrices[16798135791411043948803]/cells[4594115711411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[20691158001411043948803]"]}
+,
+{"class":"kpcmmm.kProduct@968507601411043948803","name":"Credit Karma","generated_KMF_ID":"968507601411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[2137395961411043948803]","matrices[16798135791411043948803]/cells[6097316691411043948803]","matrices[16798135791411043948803]/cells[8258224211411043948803]","matrices[16798135791411043948803]/cells[4594115711411043948803]","matrices[16798135791411043948803]/cells[8949076381411043948803]","matrices[16798135791411043948803]/cells[7714548811411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@11134350241411043948803","name":"Free Experian credit report summary","generated_KMF_ID":"11134350241411043948803","constraints":["matrices[16798135791411043948803]/cells[4752081741411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[10382027071411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@14702125981411043948803","name":"once monthly","generated_KMF_ID":"14702125981411043948803","constraints":["matrices[16798135791411043948803]/cells[20750967431411043948803]","matrices[16798135791411043948803]/cells[11297176251411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[15193520381411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@19442939171411043948803","name":"not FICO)","generated_KMF_ID":"19442939171411043948803","constraints":["matrices[16798135791411043948803]/cells[19101631371411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[196927071411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@34073361411043948803","name":"Experian's National Equivalency Score","generated_KMF_ID":"34073361411043948803","constraints":["matrices[16798135791411043948803]/cells[5219175491411043948803]","matrices[16798135791411043948803]/cells[7226745391411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[19966402681411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@20682304901411043948803","name":"once every 6 months","generated_KMF_ID":"20682304901411043948803","constraints":["matrices[16798135791411043948803]/cells[14131371561411043948803]","matrices[16798135791411043948803]/cells[14878007311411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[149922331411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@3884178481411043948803","name":"Experian & Transunion","generated_KMF_ID":"3884178481411043948803","constraints":["matrices[16798135791411043948803]/cells[19101631371411043948803]","matrices[16798135791411043948803]/cells[16086787311411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[1146844211411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@9210147561411043948803","name":"FICO (proprietary from Equifax","generated_KMF_ID":"9210147561411043948803","constraints":["matrices[16798135791411043948803]/cells[19101631371411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[6692045491411043948803]"]}
+,
+{"class":"kpcmmm.kProduct@13344208991411043948803","name":"AnnualCreditReport.com","generated_KMF_ID":"13344208991411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[18111043331411043948803]","matrices[16798135791411043948803]/cells[19101631371411043948803]","matrices[16798135791411043948803]/cells[19644663281411043948803]","matrices[16798135791411043948803]/cells[16086787311411043948803]","matrices[16798135791411043948803]/cells[5582010021411043948803]","matrices[16798135791411043948803]/cells[12139546121411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@20255408771411043948803","name":"VantageScore","generated_KMF_ID":"20255408771411043948803","constraints":["matrices[16798135791411043948803]/cells[13593375411411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[12584174101411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@11071583831411043948803","name":"Cost of credit report","generated_KMF_ID":"11071583831411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[10991152751411043948803]","matrices[16798135791411043948803]/cells[8949076381411043948803]","matrices[16798135791411043948803]/cells[4752081741411043948803]","matrices[16798135791411043948803]/cells[5582010021411043948803]","matrices[16798135791411043948803]/cells[14878007311411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[11953191041411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@900669141411043948803","name":"Free proprietary credit report summary","generated_KMF_ID":"900669141411043948803","constraints":["matrices[16798135791411043948803]/cells[10991152751411043948803]","matrices[16798135791411043948803]/cells[8949076381411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[3937990321411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@17985214251411043948803","name":"Equifax","generated_KMF_ID":"17985214251411043948803","constraints":["matrices[16798135791411043948803]/cells[3373781241411043948803]","matrices[16798135791411043948803]/cells[16086787311411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[5667301071411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@16818029061411043948803","name":"Credit card required?","generated_KMF_ID":"16818029061411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[11308230671411043948803]","matrices[16798135791411043948803]/cells[2137395961411043948803]","matrices[16798135791411043948803]/cells[15550067231411043948803]","matrices[16798135791411043948803]/cells[12139546121411043948803]","matrices[16798135791411043948803]/cells[17949068961411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[8357652551411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@16082596961411043948803","name":"Social Security Number required?","generated_KMF_ID":"16082596961411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[6097316691411043948803]","matrices[16798135791411043948803]/cells[8010793371411043948803]","matrices[16798135791411043948803]/cells[19644663281411043948803]","matrices[16798135791411043948803]/cells[1860535431411043948803]","matrices[16798135791411043948803]/cells[11652922731411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[1872384311411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@16500086781411043948803","name":"for credit report)","generated_KMF_ID":"16500086781411043948803","constraints":["matrices[16798135791411043948803]/cells[12139546121411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[4479934521411043948803]"]}
+,
+{"class":"kpcmmm.kProduct@10298026561411043948803","name":"Credit Sesame","generated_KMF_ID":"10298026561411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[20750967431411043948803]","matrices[16798135791411043948803]/cells[2441566751411043948803]","matrices[16798135791411043948803]/cells[4752081741411043948803]","matrices[16798135791411043948803]/cells[11652922731411043948803]","matrices[16798135791411043948803]/cells[17949068961411043948803]","matrices[16798135791411043948803]/cells[7226745391411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@13688510541411043948803","name":"Experian score = $7.95","generated_KMF_ID":"13688510541411043948803","constraints":["matrices[16798135791411043948803]/cells[18111043331411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[14302173011411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@8701810191411043948803","name":"Report type","generated_KMF_ID":"8701810191411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[2441566751411043948803]","matrices[16798135791411043948803]/cells[3373781241411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]","matrices[16798135791411043948803]/cells[4594115711411043948803]","matrices[16798135791411043948803]/cells[16086787311411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[16508965911411043948803]"]}
+,
+{"class":"kpcmmm.kProduct@19576580561411043948803","name":"Credit.com","generated_KMF_ID":"19576580561411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[11308230671411043948803]","matrices[16798135791411043948803]/cells[10991152751411043948803]","matrices[16798135791411043948803]/cells[8010793371411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]","matrices[16798135791411043948803]/cells[11297176251411043948803]","matrices[16798135791411043948803]/cells[5219175491411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@16575686591411043948803","name":"FICO score (Equifax) = $7.95","generated_KMF_ID":"16575686591411043948803","constraints":["matrices[16798135791411043948803]/cells[18111043331411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[6547688141411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@21206726721411043948803","name":"one from each agency every 12 months","generated_KMF_ID":"21206726721411043948803","constraints":["matrices[16798135791411043948803]/cells[5582010021411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[13101084831411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@19438635601411043948803","name":"Free","generated_KMF_ID":"19438635601411043948803","constraints":["matrices[16798135791411043948803]/cells[20750967431411043948803]","matrices[16798135791411043948803]/cells[8258224211411043948803]","matrices[16798135791411043948803]/cells[14131371561411043948803]","matrices[16798135791411043948803]/cells[5582010021411043948803]","matrices[16798135791411043948803]/cells[14878007311411043948803]","matrices[16798135791411043948803]/cells[11297176251411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[15006177241411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@18352472741411043948803","name":"(for credit score","generated_KMF_ID":"18352472741411043948803","constraints":["matrices[16798135791411043948803]/cells[12139546121411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[2850267961411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@10256879221411043948803","name":"Score type","generated_KMF_ID":"10256879221411043948803","constraints":[],"myValuedCells":["matrices[16798135791411043948803]/cells[13593375411411043948803]","matrices[16798135791411043948803]/cells[19101631371411043948803]","matrices[16798135791411043948803]/cells[7714548811411043948803]","matrices[16798135791411043948803]/cells[5219175491411043948803]","matrices[16798135791411043948803]/cells[7226745391411043948803]"],"domain":["domainCollection[4244943051411043948803]/domains[14519570821411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@11477121811411043948803","name":"Experian","generated_KMF_ID":"11477121811411043948803","constraints":["matrices[16798135791411043948803]/cells[2441566751411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[10095039391411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@21031248901411043948803","name":"once weekly","generated_KMF_ID":"21031248901411043948803","constraints":["matrices[16798135791411043948803]/cells[8258224211411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[5050253731411043948803]"]}
+,
+{"class":"kpcmmm.kFeature@11859199951411043948803","name":"Transunion's TransRisk New Account score. VantageScore.","generated_KMF_ID":"11859199951411043948803","constraints":["matrices[16798135791411043948803]/cells[7714548811411043948803]"],"myValuedCells":[],"domain":["domainCollection[4244943051411043948803]/domains[17082076441411043948803]"]}
+],"domainCollection":[
+{"class":"kpcmmm.kDomainCollection@4244943051411043948803","generated_KMF_ID":"4244943051411043948803","domains":[
+{"class":"kpcmmm.kEnum@3937990321411043948803","generated_KMF_ID":"3937990321411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@17082076441411043948803","generated_KMF_ID":"17082076441411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@2850267961411043948803","generated_KMF_ID":"2850267961411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@1146844211411043948803","generated_KMF_ID":"1146844211411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@10095039391411043948803","generated_KMF_ID":"10095039391411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@572136871411043948803","generated_KMF_ID":"572136871411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@5667301071411043948803","generated_KMF_ID":"5667301071411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@6547688141411043948803","generated_KMF_ID":"6547688141411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@19966402681411043948803","generated_KMF_ID":"19966402681411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@10382027071411043948803","generated_KMF_ID":"10382027071411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@12584174101411043948803","generated_KMF_ID":"12584174101411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@196927071411043948803","generated_KMF_ID":"196927071411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@16508965911411043948803","generated_KMF_ID":"16508965911411043948803","values":["matrices[16798135791411043948803]/cells[3373781241411043948803]/interpretation[14700545311411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]/interpretation[15484365641411043948803]/argument[10622206801411043948803]","matrices[16798135791411043948803]/cells[16086787311411043948803]/interpretation[19701703881411043948803]/contraints[14444410121411043948803]","matrices[16798135791411043948803]/cells[2441566751411043948803]/interpretation[13641383181411043948803]/argument[19307966001411043948803]","matrices[16798135791411043948803]/cells[8753479891411043948803]/interpretation[15484365641411043948803]/condition[16912400961411043948803]","matrices[16798135791411043948803]/cells[4594115711411043948803]/interpretation[13115556571411043948803]/condition[7535133891411043948803]","matrices[16798135791411043948803]/cells[2441566751411043948803]/interpretation[13641383181411043948803]/condition[10653853571411043948803]"]}
+,
+{"class":"kpcmmm.kEnum@11953191041411043948803","generated_KMF_ID":"11953191041411043948803","values":["matrices[16798135791411043948803]/cells[14878007311411043948803]/interpretation[9566916821411043948803]/contraints[3037286821411043948803]","matrices[16798135791411043948803]/cells[8949076381411043948803]/interpretation[10212136501411043948803]","matrices[16798135791411043948803]/cells[14878007311411043948803]/interpretation[9566916821411043948803]/contraints[7576643371411043948803]","matrices[16798135791411043948803]/cells[4752081741411043948803]/interpretation[18004299001411043948803]","matrices[16798135791411043948803]/cells[10991152751411043948803]/interpretation[16996548781411043948803]","matrices[16798135791411043948803]/cells[5582010021411043948803]/interpretation[19944308281411043948803]/contraints[8727971801411043948803]","matrices[16798135791411043948803]/cells[5582010021411043948803]/interpretation[19944308281411043948803]/contraints[18299084431411043948803]"]}
+,
+{"class":"kpcmmm.kEnum@13101084831411043948803","generated_KMF_ID":"13101084831411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@20691158001411043948803","generated_KMF_ID":"20691158001411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@149922331411043948803","generated_KMF_ID":"149922331411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@8357652551411043948803","generated_KMF_ID":"8357652551411043948803","values":["matrices[16798135791411043948803]/cells[11308230671411043948803]/interpretation[4466161391411043948803]","matrices[16798135791411043948803]/cells[12139546121411043948803]/interpretation[19579038611411043948803]/argument[18269608191411043948803]","matrices[16798135791411043948803]/cells[2137395961411043948803]/interpretation[6058031591411043948803]","matrices[16798135791411043948803]/cells[15550067231411043948803]/interpretation[8100784841411043948803]","matrices[16798135791411043948803]/cells[12139546121411043948803]/interpretation[19579038611411043948803]/condition[7664189721411043948803]/contraints[10995523891411043948803]/argument[12933952851411043948803]","matrices[16798135791411043948803]/cells[17949068961411043948803]/interpretation[2103723121411043948803]"]}
+,
+{"class":"kpcmmm.kEnum@5050253731411043948803","generated_KMF_ID":"5050253731411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@15782256431411043948803","generated_KMF_ID":"15782256431411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@15193520381411043948803","generated_KMF_ID":"15193520381411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@14302173011411043948803","generated_KMF_ID":"14302173011411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@4839222181411043948803","generated_KMF_ID":"4839222181411043948803","values":["matrices[16798135791411043948803]/cells[11297176251411043948803]/interpretation[14277807721411043948803]/contraints[11334363611411043948803]","matrices[16798135791411043948803]/cells[14131371561411043948803]/interpretation[16138607941411043948803]/contraints[12422460621411043948803]","matrices[16798135791411043948803]/cells[11297176251411043948803]/interpretation[14277807721411043948803]/contraints[2771033011411043948803]","matrices[16798135791411043948803]/cells[20750967431411043948803]/interpretation[190575211411043948803]/contraints[9532766591411043948803]","matrices[16798135791411043948803]/cells[8258224211411043948803]/interpretation[5030659241411043948803]/contraints[19200365841411043948803]","matrices[16798135791411043948803]/cells[20750967431411043948803]/interpretation[190575211411043948803]/contraints[11101088001411043948803]","matrices[16798135791411043948803]/cells[8258224211411043948803]/interpretation[5030659241411043948803]/contraints[11076676131411043948803]"]}
+,
+{"class":"kpcmmm.kEnum@1872384311411043948803","generated_KMF_ID":"1872384311411043948803","values":["matrices[16798135791411043948803]/cells[6097316691411043948803]/interpretation[10005631001411043948803]","matrices[16798135791411043948803]/cells[1860535431411043948803]/interpretation[2157058291411043948803]","matrices[16798135791411043948803]/cells[19644663281411043948803]/interpretation[11860391371411043948803]","matrices[16798135791411043948803]/cells[11652922731411043948803]/interpretation[19031453211411043948803]","matrices[16798135791411043948803]/cells[8010793371411043948803]/interpretation[8968617131411043948803]"]}
+,
+{"class":"kpcmmm.kEnum@4479934521411043948803","generated_KMF_ID":"4479934521411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@6692045491411043948803","generated_KMF_ID":"6692045491411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@15006177241411043948803","generated_KMF_ID":"15006177241411043948803","values":[]}
+,
+{"class":"kpcmmm.kEnum@14519570821411043948803","generated_KMF_ID":"14519570821411043948803","values":["matrices[16798135791411043948803]/cells[7226745391411043948803]/interpretation[16993653281411043948803]","matrices[16798135791411043948803]/cells[5219175491411043948803]/interpretation[17088034221411043948803]"]}
+]}
+]}
