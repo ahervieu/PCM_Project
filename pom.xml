@@ -8,6 +8,7 @@
     <artifactId>pcm-scrapper.root</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <metamodel.ecore>./model/KPCMMM.mm</metamodel.ecore>
         <kmf.version>3.5.11-SNAPSHOT</kmf.version>
@@ -15,6 +16,7 @@
     <modules>
         <module>org.diverse.pcm-model</module>
         <module>org.diverse.pcmOperation</module>
+        <module>org.diverse.pcm.pcmmToKpcmm</module>
     </modules>
 
 </project>
