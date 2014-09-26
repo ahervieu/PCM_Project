@@ -11,7 +11,7 @@
 
     <properties>
         <metamodel.ecore>./model/KPCMMM.mm</metamodel.ecore>
-        <kmf.version>3.5.11-SNAPSHOT</kmf.version>
+        <kmf.version>3.5.10</kmf.version>
     </properties>
     <modules>
         <module>org.diverse.pcm-model</module>
