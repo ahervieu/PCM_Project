@@ -40,138 +40,171 @@ import kpcmmm.kInteger;
 import kpcmmm.kDouble;
 import pcmmm.Header;
 
- class DefaultKPCMMMFactory(   ) : KPCMMMFactory    {
+  open abstract   class DefaultKPCMMMFactory(  override val datastore : org.kevoree.modeling.api.persistence.DataStore    ) : KPCMMMFactory  ,org.kevoree.modeling.api.persistence.PersistenceKMFFactory   {
 
 override fun getVersion() : String { return "1.0-SNAPSHOT" }
 
-    override fun lookup(path: String): org.kevoree.modeling.api.KMFContainer? {
-        return null
-    }
+
+override val elem_cache: MutableMap<String, org.kevoree.modeling.api.KMFContainer> = java.util.concurrent.ConcurrentHashMap<String, org.kevoree.modeling.api.KMFContainer>()
+override val modified_elements: MutableMap<String, org.kevoree.modeling.api.KMFContainer> = java.util.concurrent.ConcurrentHashMap<String, org.kevoree.modeling.api.KMFContainer>()
+override val elementsToBeRemoved : MutableSet<String> = java.util.HashSet<String>()
+override var dirty : Boolean = false;
 
 
 
 override fun createkAbstractProduct() : kpcmmm.kAbstractProduct {
 val tempElem = kpcmmm.impl.kAbstractProductImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkVariabilityConcept() : kpcmmm.kVariabilityConcept {
 val tempElem = kpcmmm.impl.kVariabilityConceptImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkValuedCell() : kpcmmm.kValuedCell {
 val tempElem = kpcmmm.impl.kValuedCellImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkCell() : kpcmmm.kCell {
 val tempElem = kpcmmm.impl.kCellImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkAbstractFeature() : kpcmmm.kAbstractFeature {
 val tempElem = kpcmmm.impl.kAbstractFeatureImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkPCM() : kpcmmm.kPCM {
 val tempElem = kpcmmm.impl.kPCMImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkMatrix() : kpcmmm.kMatrix {
 val tempElem = kpcmmm.impl.kMatrixImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkDomainCollection() : kpcmmm.kDomainCollection {
 val tempElem = kpcmmm.impl.kDomainCollectionImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkProductFamily() : kpcmmm.kProductFamily {
 val tempElem = kpcmmm.impl.kProductFamilyImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkProduct() : kpcmmm.kProduct {
 val tempElem = kpcmmm.impl.kProductImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkFeatureFamily() : kpcmmm.kFeatureFamily {
 val tempElem = kpcmmm.impl.kFeatureFamilyImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkFeature() : kpcmmm.kFeature {
 val tempElem = kpcmmm.impl.kFeatureImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkDomain() : kpcmmm.kDomain {
 val tempElem = kpcmmm.impl.kDomainImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkExtra() : kpcmmm.kExtra {
 val tempElem = kpcmmm.impl.kExtraImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkHeader() : kpcmmm.kHeader {
 val tempElem = kpcmmm.impl.kHeaderImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkConstraint() : kpcmmm.kConstraint {
 val tempElem = kpcmmm.impl.kConstraintImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkBoolean() : kpcmmm.kBoolean {
 val tempElem = kpcmmm.impl.kBooleanImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkSimple() : kpcmmm.kSimple {
 val tempElem = kpcmmm.impl.kSimpleImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkPartial() : kpcmmm.kPartial {
 val tempElem = kpcmmm.impl.kPartialImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkMultiple() : kpcmmm.kMultiple {
 val tempElem = kpcmmm.impl.kMultipleImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkUnknown() : kpcmmm.kUnknown {
 val tempElem = kpcmmm.impl.kUnknownImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkEmpty() : kpcmmm.kEmpty {
 val tempElem = kpcmmm.impl.kEmptyImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkInconsistent() : kpcmmm.kInconsistent {
 val tempElem = kpcmmm.impl.kInconsistentImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkAnd() : kpcmmm.kAnd {
 val tempElem = kpcmmm.impl.kAndImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkOr() : kpcmmm.kOr {
 val tempElem = kpcmmm.impl.kOrImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkXOr() : kpcmmm.kXOr {
 val tempElem = kpcmmm.impl.kXOrImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkEnum() : kpcmmm.kEnum {
 val tempElem = kpcmmm.impl.kEnumImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkVariabilityConceptRef() : kpcmmm.kVariabilityConceptRef {
 val tempElem = kpcmmm.impl.kVariabilityConceptRefImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkInteger() : kpcmmm.kInteger {
 val tempElem = kpcmmm.impl.kIntegerImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createkDouble() : kpcmmm.kDouble {
 val tempElem = kpcmmm.impl.kDoubleImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 override fun createHeader() : pcmmm.Header {
 val tempElem = pcmmm.impl.HeaderImpl(  )
+    initObject(tempElem)
     return tempElem
 }
 
@@ -212,14 +245,22 @@ when(metaClassName){
 }
 }
 
+    protected fun initObject(elem : org.kevoree.modeling.api.persistence.KMFContainerProxy){
+        elem.originFactory = this
+        monitor(elem)
+            }
 
-    override fun select(query: String): List<org.kevoree.modeling.api.KMFContainer> {
-        //TODO
-        return java.util.ArrayList<org.kevoree.modeling.api.KMFContainer>();
-    }
     override fun root(elem : org.kevoree.modeling.api.KMFContainer){
-    (elem as kpcmmm.container.KMFContainerImpl).is_root = true
-    (elem as kpcmmm.container.KMFContainerImpl).path_cache = "/"
+    if(elem !is org.kevoree.modeling.api.persistence.KMFContainerProxy || (elem as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory != this){
+        throw Exception("KMFObject created in another factory of TimeView cannot be set as root of this TimeView")
+    }
+    if(lookup("/") != elem){
+       elem.isDirty = true;
+    }
+    (elem as kpcmmm.container.KMFContainerPersistenceImpl).is_root = true
+    (elem as kpcmmm.container.KMFContainerPersistenceImpl).path_cache = "/"
+    modified_elements.put(elem.hashCode().toString() + elem.internalGetKey(), elem)
+    elem_cache.put("/", elem)
     }
     
     override fun createJSONSerializer(): org.kevoree.modeling.api.json.JSONModelSerializer {

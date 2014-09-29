@@ -3,10 +3,10 @@ package kpcmmm.impl
 /**
  * Created by Kevoree Model Generator(KMF).
  * @developers: Gregory Nain, Fouquet Francois
- * Date: 22 sept. 14 Time: 18:04
+ * Date: 26 sept. 14 Time: 11:07
  * Meta-Model:NS_URI=http://kpcmmm
  */
-class kVariabilityConceptRefImpl : kpcmmm.container.KMFContainerImpl, kpcmmm.kVariabilityConceptRef { 
+class kVariabilityConceptRefImpl : kpcmmm.container.KMFContainerPersistenceImpl, kpcmmm.kVariabilityConceptRef { 
 override internal var internal_eContainer : org.kevoree.modeling.api.KMFContainer? = null
 override internal var internal_containmentRefName : String? = null
 override internal var internal_unsetCmd : kpcmmm.container.RemoveFromContainerCommand? = null
@@ -18,14 +18,17 @@ override var internal_is_deleted : Boolean = false;
 override var is_root : Boolean = false;
 override internal var internal_modelElementListeners : MutableList<org.kevoree.modeling.api.events.ModelElementListener>? = null
 override internal var internal_modelTreeListeners : MutableList<org.kevoree.modeling.api.events.ModelElementListener>? = null
+override var isResolved: Boolean = true
+override var inResolution: Boolean = false
+override var originFactory: org.kevoree.modeling.api.persistence.PersistenceKMFFactory? = null
+override var isDirty = false;
+
 override var path_cache : String? = null
 override var key_cache: String? = null
 override fun delete(){
+checkLazyLoad();
 internal_deleteInProgress = true
-if(concept != null) {
-(concept!! as kpcmmm.container.KMFContainerImpl).removeInboundReference(this,kpcmmm.util.Constants.Ref_concept)
-concept = null
-}
+(this as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory!!.remove(this)
 advertiseInboundRefs(org.kevoree.modeling.api.util.ActionType.REMOVE, this)
 internal_inboundReferences.clear()
 if(internal_unsetCmd!=null){internal_unsetCmd!!.run()}
@@ -37,8 +40,13 @@ return this;
 }
 public override var name : String? = kpcmmm.util.Constants.STRING_DEFAULTVAL
 	 set(iP : String?){
+checkLazyLoad()
 internal_name(iP, true)
 	}//end of setter
+get(){
+checkLazyLoad()
+return $name
+}
 
 	private fun internal_name(iP : String?, fireEvents : Boolean = true){
 if(isReadOnly()){throw Exception(kpcmmm.util.Constants.READ_ONLY_EXCEPTION)}
@@ -46,8 +54,10 @@ if(iP != name){
 val oldPath = path()
 val kmf_previousVal = $name
 $name = iP
+if(!inResolution){
 if(fireEvents) {
 fireModelEvent(org.kevoree.modeling.api.events.ModelEvent(org.kevoree.modeling.api.util.ActionType.SET, org.kevoree.modeling.api.util.ElementAttributeType.ATTRIBUTE, kpcmmm.util.Constants.Att_name, name,kmf_previousVal,this,oldPath))
+}
 }
 	}
 	}//end of setter
@@ -57,8 +67,13 @@ return this;
 }
 public override var confident : Boolean? = kpcmmm.util.Constants.BOOLEAN_DEFAULTVAL
 	 set(iP : Boolean?){
+checkLazyLoad()
 internal_confident(iP, true)
 	}//end of setter
+get(){
+checkLazyLoad()
+return $confident
+}
 
 	private fun internal_confident(iP : Boolean?, fireEvents : Boolean = true){
 if(isReadOnly()){throw Exception(kpcmmm.util.Constants.READ_ONLY_EXCEPTION)}
@@ -66,8 +81,10 @@ if(iP != confident){
 val oldPath = path()
 val kmf_previousVal = $confident
 $confident = iP
+if(!inResolution){
 if(fireEvents) {
 fireModelEvent(org.kevoree.modeling.api.events.ModelEvent(org.kevoree.modeling.api.util.ActionType.SET, org.kevoree.modeling.api.util.ElementAttributeType.ATTRIBUTE, kpcmmm.util.Constants.Att_confident, confident,kmf_previousVal,this,oldPath))
+}
 }
 	}
 	}//end of setter
@@ -77,8 +94,13 @@ return this;
 }
 public override var verbatim : String? = kpcmmm.util.Constants.STRING_DEFAULTVAL
 	 set(iP : String?){
+checkLazyLoad()
 internal_verbatim(iP, true)
 	}//end of setter
+get(){
+checkLazyLoad()
+return $verbatim
+}
 
 	private fun internal_verbatim(iP : String?, fireEvents : Boolean = true){
 if(isReadOnly()){throw Exception(kpcmmm.util.Constants.READ_ONLY_EXCEPTION)}
@@ -86,8 +108,10 @@ if(iP != verbatim){
 val oldPath = path()
 val kmf_previousVal = $verbatim
 $verbatim = iP
+if(!inResolution){
 if(fireEvents) {
 fireModelEvent(org.kevoree.modeling.api.events.ModelEvent(org.kevoree.modeling.api.util.ActionType.SET, org.kevoree.modeling.api.util.ElementAttributeType.ATTRIBUTE, kpcmmm.util.Constants.Att_verbatim, verbatim,kmf_previousVal,this,oldPath))
+}
 }
 	}
 	}//end of setter
@@ -97,20 +121,28 @@ return this;
 }
 public override var generated_KMF_ID : String? = ""+hashCode() + java.util.Date().getTime()
 	 set(iP : String?){
+checkLazyLoad()
 internal_generated_KMF_ID(iP, true)
 	}//end of setter
+get(){
+checkLazyLoad()
+return $generated_KMF_ID
+}
 
 	private fun internal_generated_KMF_ID(iP : String?, fireEvents : Boolean = true){
 if(isReadOnly()){throw Exception(kpcmmm.util.Constants.READ_ONLY_EXCEPTION)}
 if(iP != generated_KMF_ID){
 val oldPath = path()
 val oldId = internalGetKey()
+if(!inResolution){
 path_cache = null
 key_cache = null
+}
 val previousParent = eContainer();
 val previousRefNameInParent = getRefInParent();
 val kmf_previousVal = $generated_KMF_ID
 $generated_KMF_ID = iP
+if(!inResolution){
 if(fireEvents) {
 fireModelEvent(org.kevoree.modeling.api.events.ModelEvent(org.kevoree.modeling.api.util.ActionType.SET, org.kevoree.modeling.api.util.ElementAttributeType.ATTRIBUTE, kpcmmm.util.Constants.Att_generated_KMF_ID, generated_KMF_ID,kmf_previousVal,this,oldPath))
 }
@@ -122,20 +154,26 @@ if(fireEvents) {
 fireModelEvent(org.kevoree.modeling.api.events.ModelEvent(org.kevoree.modeling.api.util.ActionType.RENEW_INDEX, org.kevoree.modeling.api.util.ElementAttributeType.ATTRIBUTE, kpcmmm.util.Constants.Att_generated_KMF_ID, path(),null,this,oldPath))
 }
 visit(kpcmmm.container.cleanCacheVisitor,true,true,false)
+}
 	}
 	}//end of setter
 override var concept:kpcmmm.kVariabilityConcept?=null
+get(){
+checkLazyLoad()
+return $concept
+}
 	 set(conceptP){if(isReadOnly()){throw Exception(kpcmmm.util.Constants.READ_ONLY_EXCEPTION)}
 internal_concept(conceptP, true, true)
 }
 fun internal_concept(conceptP : kpcmmm.kVariabilityConcept?, setOpposite : Boolean, fireEvents : Boolean ) {
+checkLazyLoad()
 if($concept!= conceptP){
 val kmf_previousVal = $concept
 if(conceptP != null) {
-(conceptP!! as kpcmmm.container.KMFContainerImpl).addInboundReference(this, kpcmmm.util.Constants.Ref_concept)
+(conceptP!! as kpcmmm.container.KMFContainerPersistenceImpl).addInboundReference(this, kpcmmm.util.Constants.Ref_concept)
 } else {
 if($concept != null) {
-($concept!! as kpcmmm.container.KMFContainerImpl).removeInboundReference(this, kpcmmm.util.Constants.Ref_concept)
+($concept!! as kpcmmm.container.KMFContainerPersistenceImpl).removeInboundReference(this, kpcmmm.util.Constants.Ref_concept)
 }
 }
 $concept = conceptP
@@ -149,6 +187,7 @@ override public fun withConcept(ref : kpcmmm.kVariabilityConcept) : kpcmmm.kVari
 return this;
 }
 override fun reflexiveMutator(mutationType : org.kevoree.modeling.api.util.ActionType, refName : String, value : Any?, setOpposite : Boolean, fireEvents : Boolean) {
+checkLazyLoad()
 when(refName) {
 kpcmmm.util.Constants.Att_name -> {
 this.internal_name((value as? String), fireEvents)
@@ -205,6 +244,7 @@ else -> {return null}
 
 
 override fun visit(visitor : org.kevoree.modeling.api.util.ModelVisitor, recursive : Boolean, containedReference : Boolean,nonContainedReference : Boolean){
+                        checkLazyLoad()
                         visitor.beginVisitElem(this)
                                                                                                            if(nonContainedReference){
                                                                             if(visitor.beginVisitRef(kpcmmm.util.Constants.Ref_concept, kpcmmm.util.Constants.kpcmmm_kVariabilityConcept)){
@@ -216,6 +256,7 @@ override fun visit(visitor : org.kevoree.modeling.api.util.ModelVisitor, recursi
 }
 
 override fun visitAttributes(visitor : org.kevoree.modeling.api.util.ModelAttributeVisitor){
+        checkLazyLoad()
                 visitor.visit(confident,kpcmmm.util.Constants.Att_confident,this)
             visitor.visit(name,kpcmmm.util.Constants.Att_name,this)
             visitor.visit(verbatim,kpcmmm.util.Constants.Att_verbatim,this)

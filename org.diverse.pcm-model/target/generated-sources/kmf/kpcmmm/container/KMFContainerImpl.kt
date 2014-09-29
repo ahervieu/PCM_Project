@@ -9,6 +9,8 @@ package kpcmmm.container
 
 object cleanCacheVisitor : org.kevoree.modeling.api.util.ModelVisitor() {
     public override fun visit(elem: org.kevoree.modeling.api.KMFContainer, refNameInParent: String, parent: org.kevoree.modeling.api.KMFContainer) {
+            (elem as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory!!.elementsToBeRemoved.add((elem as KMFContainerImpl).path())
+        (elem as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory!!.notify(elem)
         }
 
     public override fun endVisitElem(elem: org.kevoree.modeling.api.KMFContainer) {
@@ -118,6 +120,7 @@ trait KMFContainerImpl : org.kevoree.modeling.api.KMFContainer, org.kevoree.mode
         internal_unsetCmd = unsetCmd
         internal_containmentRefName = refNameInParent
         path_cache = null
+        (this as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory!!.notify(this)
 }
 
 override fun select(query : String) : List<org.kevoree.modeling.api.KMFContainer> {
@@ -173,6 +176,7 @@ override fun select(query : String) : List<org.kevoree.modeling.api.KMFContainer
             if(eContainer() != null) {
                 (eContainer() as KMFContainerImpl).fireModelEventOnTree(evt)
             }
+                            (this as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory?.datastore?.notify(evt)
                     }
 
     override fun addModelTreeListener(lst : org.kevoree.modeling.api.events.ModelElementListener){
@@ -346,6 +350,9 @@ override fun select(query : String) : List<org.kevoree.modeling.api.KMFContainer
             subquery = subquery.substring(subquery.indexOf('/') + 1, subquery.length)
         }
         val objFound = findByID(relationName,queryID)
+        if(objFound==null){
+            return (this as org.kevoree.modeling.api.persistence.KMFContainerProxy).originFactory!!.lookup(query)
+        }
         if(subquery != "" && objFound != null){
              return objFound.findByPath(subquery)
         } else {

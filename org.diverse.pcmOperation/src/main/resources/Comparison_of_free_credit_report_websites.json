@@ -1,4 +1,3 @@
-
 {"class":"kpcmmm.kPCM@9241391521411043948803","description":"","generated_KMF_ID":"9241391521411043948803","matrices":[
 {"class":"kpcmmm.kMatrix@16798135791411043948803","name":"","id":"_0","generated_KMF_ID":"16798135791411043948803","cells":[
 {"class":"kpcmmm.kHeader@5810534201411043948803","colspan":"1","note":"","rowspan":"1","name":"0,2: cost of credit score","link":"","column":"2","row":"0","verbatim":"Cost of credit score","generated_KMF_ID":"5810534201411043948803","concept":["concepts[15138260961411043948803]"]}

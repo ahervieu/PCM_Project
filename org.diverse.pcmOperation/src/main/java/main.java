@@ -1,23 +1,18 @@
 import jet.runtime.typeinfo.JetValueParameter;
-
-import kpcmmm.factory.*;
+import kpcmmm.factory.DefaultKPCMMMFactory;
+import kpcmmm.factory.KPCMMMFactory;
+import kpcmmm.factory.KPCMMMTransaction;
+import kpcmmm.factory.KPCMMMTransactionManager;
 import kpcmmm.kMatrix;
 import kpcmmm.kPCM;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.kevoree.modeling.api.KMFContainer;
-
-import org.kevoree.modeling.api.KMFFactory;
 import org.kevoree.modeling.api.Transaction;
-import org.kevoree.modeling.api.TransactionManager;
 import org.kevoree.modeling.api.compare.ModelCompare;
-
 import org.kevoree.modeling.api.events.ModelElementListener;
 import org.kevoree.modeling.api.events.ModelEvent;
 import org.kevoree.modeling.api.json.JSONModelLoader;
-
-import org.kevoree.modeling.api.persistence.DataStore;
-
 import org.kevoree.modeling.api.persistence.MemoryDataStore;
 import org.kevoree.modeling.api.trace.ModelTrace;
 import org.kevoree.modeling.api.trace.TraceSequence;
@@ -26,13 +21,8 @@ import org.kevoree.modeling.api.util.ModelTracker;
 import org.kevoree.modeling.api.util.ModelVisitor;
 import org.kevoree.modeling.datastores.leveldb.LevelDbDataStore;
 
-
-import java.io.FileInputStream;
-import java.io.File ;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Aymeric on 17/09/2014.
@@ -45,26 +35,38 @@ public class main {
 
         String model1 = "Comparison_of_document_interfaces.json";
         String model2 = "Comparison_of_free_credit_report_websites.json";
-       /* KPCMMMTransactionManager mytsMangager;
-        DataStore ds = new LevelDbDataStore("sdss") ;
-        mytsMangager = new KPCMMMTransactionManager(ds);
-        TransactionManager tm = new KPCMMMTransactionManager(ds) ;
 
-   //     KMFFactory myFactory = new DefaultKPCMMMFactory(tm.createTransaction(),ds,null,0);
-      /*  KMFFactory myFactory = new DefaultKPCMMMFactory(new MemoryDataStore()) {
+        KPCMMMFactory factory   = new DefaultKPCMMMFactory(new MemoryDataStore()) {
             @NotNull
             @Override
             public Transaction getOriginTransaction() {
                 return null;
             }
-        };*/
+        };
+        System.out.println("Kevoree Registry Server...., majorVersion=" );
+        final LevelDbDataStore dataStore = new LevelDbDataStore("kev_db_0" );
+        KPCMMMTransactionManager manager = new KPCMMMTransactionManager(dataStore);
+        KPCMMMTransaction transaction = manager.createTransaction();
 
-        KMFFactory myFactory = new DefaultKPCMMMFactory();
-        JSONModelLoader jml = new JSONModelLoader(myFactory);
-
+        JSONModelLoader jml = factory.createJSONLoader();
         List<KMFContainer> lst = jml.loadModelFromStream(main.class.getResourceAsStream(model1));
         kPCM m = (kPCM) lst.get(0);
+        ModelCompare compare = transaction.createModelCompare();
+
+        kPCM newRootToCompare = transaction.createkPCM().withGenerated_KMF_ID("0");
+        TraceSequence seq = compare.merge(newRootToCompare, m);
+        seq.applyOn(newRootToCompare);
+
+
+        transaction.commit();
+        transaction.close();
+
+        manager.close();
+        dataStore.commit();
+        dataStore.close();
+
         System.out.println("title " + m.getGenerated_KMF_ID());
+
 
         //Visitor to go throught the model
         m.visit(new ModelVisitor() {
@@ -104,11 +106,12 @@ public class main {
 
         System.out.println("Model compare");
 
-        ModelCompare mc = myFactory.createModelCompare();
+        ModelCompare mc = factory.createModelCompare();
 
     
         List<KMFContainer> lst2 = jml.loadModelFromStream(main.class.getResourceAsStream(model2));
         kPCM m2 = (kPCM) lst2.get(0);
+
 
         m.addModelElementListener(new ModelElementListener() {
             @Override
@@ -146,6 +149,13 @@ public class main {
       //  m.removeAllMatrices();
     //    mt.undo();
 
+
+        transaction.commit();
+        transaction.close();
+
+        manager.close();
+        dataStore.commit();
+        dataStore.close();
 
     }
 }

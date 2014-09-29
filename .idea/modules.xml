@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PCMFrontEnd/PCMFrontEnd.iml" filepath="$PROJECT_DIR$/PCMFrontEnd/PCMFrontEnd.iml" />
-      <module fileurl="file://$PROJECT_DIR$/org.diverse.model-utils/org.diverse.model-utils.iml" filepath="$PROJECT_DIR$/org.diverse.model-utils/org.diverse.model-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.diverse.pcm-test/org.diverse.pcm-test.iml" filepath="$PROJECT_DIR$/org.diverse.pcm-test/org.diverse.pcm-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.diverse.pcm.pcmmToKpcmm/org.diverse.pcm.pcmmToKpcmm.iml" filepath="$PROJECT_DIR$/org.diverse.pcm.pcmmToKpcmm/org.diverse.pcm.pcmmToKpcmm.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.diverse.pcmOperation/org.diverse.pcmOperation.iml" filepath="$PROJECT_DIR$/org.diverse.pcmOperation/org.diverse.pcmOperation.iml" />

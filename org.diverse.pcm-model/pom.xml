@@ -40,10 +40,8 @@
                         </goals>
                         <configuration>
                             <ecore>${metamodel.ecore}</ecore>
-                            <js>false</js>
-                            <persistence>false</persistence>
-                            <timeAware>false</timeAware>
                             <events>true</events>
+                            <persistence>true</persistence>
                         </configuration>
                 </execution>
                 </executions>
