@@ -2,3 +2,5 @@
 org.diverse.pcm-model/target
 .idea
 /.DS_Store
+
+org.diverse.pcm-model/model/KPCMMM.mm.libs
