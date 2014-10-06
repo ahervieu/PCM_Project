@@ -1,27 +1,26 @@
+
 import jet.runtime.typeinfo.JetValueParameter;
-import kpcmmm.factory.DefaultKPCMMMFactory;
-import kpcmmm.factory.KPCMMMFactory;
 import kpcmmm.factory.KPCMMMTransaction;
 import kpcmmm.factory.KPCMMMTransactionManager;
-import kpcmmm.kMatrix;
 import kpcmmm.kPCM;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.kevoree.modeling.api.KMFContainer;
-import org.kevoree.modeling.api.Transaction;
+import org.kevoree.modeling.api.ModelLoader;
+import org.kevoree.modeling.api.TransactionManager;
 import org.kevoree.modeling.api.compare.ModelCompare;
-import org.kevoree.modeling.api.events.ModelElementListener;
-import org.kevoree.modeling.api.events.ModelEvent;
-import org.kevoree.modeling.api.json.JSONModelLoader;
 import org.kevoree.modeling.api.persistence.MemoryDataStore;
 import org.kevoree.modeling.api.trace.ModelTrace;
 import org.kevoree.modeling.api.trace.TraceSequence;
 import org.kevoree.modeling.api.util.ModelAttributeVisitor;
-import org.kevoree.modeling.api.util.ModelTracker;
 import org.kevoree.modeling.api.util.ModelVisitor;
 import org.kevoree.modeling.datastores.leveldb.LevelDbDataStore;
+import org.kevoree.modeling.datastores.mongodb.MongoDBDataStore;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -30,10 +29,81 @@ import java.util.List;
 public class main {
 
     public static void main(String[] args) throws IOException {
+        //creating the db
+         MongoDBDataStore dataStore = new MongoDBDataStore("localhost",27017,"PCM_DB9") ;
+        LevelDbDataStore l = new LevelDbDataStore("rr");
+        KPCMMMTransactionManager manager = new KPCMMMTransactionManager(dataStore);
+        KPCMMMTransaction transaction = manager.createTransaction();
 
-        //Loading a model from a Json
+        kPCM root = (kPCM)transaction.lookup("/") ;
+        if (root == null) {
+            root = transaction.createkPCM().withGenerated_KMF_ID("225");
+            transaction.root(root);
+        }
+
+
+        transaction.commit();
+        transaction.close();
+
+       //Saving model in the DB
+
+        KPCMMMTransaction transaction2 = manager.createTransaction();
 
         String model1 = "Comparison_of_document_interfaces.json";
+
+
+
+        MemoryDataStore tempStore = new MemoryDataStore();
+        TransactionManager tempMemoryManager = new KPCMMMTransactionManager(tempStore);
+        KPCMMMTransaction tempTransaction = (KPCMMMTransaction) tempMemoryManager.createTransaction();
+
+        ModelCompare compare = transaction2.createModelCompare();
+        ModelLoader jml = tempTransaction.createJSONLoader();
+        InputStream is = main.class.getResourceAsStream(model1) ;
+        System.out.println(is);
+        FileInputStream fis = new FileInputStream("/Users/Aymeric/Documents/dev_PCM/pcm-scrapper/org.diverse.pcmOperation/src/main/resources/Comparison_of_document_interfaces.json");
+        List<KMFContainer> lst = jml.loadModelFromStream(fis);
+        kPCM m = (kPCM) lst.get(0);
+
+        System.err.println(  m.getGenerated_KMF_ID() );
+
+        kPCM newRootToCompare = tempTransaction.createkPCM().withGenerated_KMF_ID("0");
+        TraceSequence seq = compare.merge(newRootToCompare, m);
+         System.out.println(seq.exportToString());
+        seq.applyOn(root);
+
+
+        tempTransaction.close();
+        tempMemoryManager.close();
+       // transaction2.commit();
+        manager.close();
+        dataStore.close();
+
+        //Reading model in the DB
+
+        MongoDBDataStore dataStore2 = new MongoDBDataStore("localhost",27017,"PCM_DB9") ;
+        KPCMMMTransactionManager manager2 = new KPCMMMTransactionManager(dataStore2);
+        KPCMMMTransaction transactionLoad = manager2.createTransaction();
+
+        kPCM root2 = (kPCM)transactionLoad.lookup("/") ;
+
+        root2.visit(new ModelVisitor() {
+            @Override
+            public void visit(@JetValueParameter(name = "elem") @NotNull KMFContainer kmfContainer, @JetValueParameter(name = "refNameInParent") @NotNull String s, @JetValueParameter(name = "parent") @NotNull KMFContainer kmfContainer2) {
+                System.out.println(kmfContainer.path());
+                kmfContainer.visitAttributes(new ModelAttributeVisitor() {
+                    @Override
+                    public void visit(@JetValueParameter(name = "value", type = "?") @Nullable Object o, @JetValueParameter(name = "name") @NotNull String s, @JetValueParameter(name = "parent") @NotNull KMFContainer kmfContainer) {
+                        System.out.println("Visiting attributes");
+
+                        System.out.println(s + " " + o.toString());
+                    }
+                });
+            }
+        }, true, true, true);
+        //Loading a model from a Json
+/*
+
         String model2 = "Comparison_of_free_credit_report_websites.json";
 
         KPCMMMFactory factory   = new DefaultKPCMMMFactory(new MemoryDataStore()) {
@@ -44,9 +114,6 @@ public class main {
             }
         };
         System.out.println("Kevoree Registry Server...., majorVersion=" );
-        final LevelDbDataStore dataStore = new LevelDbDataStore("kev_db_0" );
-        KPCMMMTransactionManager manager = new KPCMMMTransactionManager(dataStore);
-        KPCMMMTransaction transaction = manager.createTransaction();
 
         JSONModelLoader jml = factory.createJSONLoader();
         List<KMFContainer> lst = jml.loadModelFromStream(main.class.getResourceAsStream(model1));
@@ -96,7 +163,7 @@ public class main {
 
         //Cell that contian winodws in name or gedit
 
-
+/*
 
         System.out.println("Select by query MAtrix with id = 0");
         System.out.println(res);
@@ -156,7 +223,7 @@ public class main {
         manager.close();
         dataStore.commit();
         dataStore.close();
-
+*/
     }
 }
 
