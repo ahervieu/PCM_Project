@@ -11,12 +11,11 @@
 
     <properties>
         <metamodel.ecore>./model/KPCMMM.mm</metamodel.ecore>
-        <kmf.version>3.5.11</kmf.version>
+        <kmf.version>3.5.12-SNAPSHOT</kmf.version>
     </properties>
     <modules>
         <module>org.diverse.pcm-model</module>
         <module>org.diverse.pcmOperation</module>
-        <module>org.diverse.pcm.pcmmToKpcmm</module>
     </modules>
 
 </project>

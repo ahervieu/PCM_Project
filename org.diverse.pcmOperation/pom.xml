@@ -38,5 +38,11 @@
             <version>${kmf.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.kevoree.modeling</groupId>
+            <artifactId>org.kevoree.modeling.microframework.datastores.mongodb</artifactId>
+            <version>${kmf.version}</version>
+        </dependency>
+
 </dependencies>
 </project>
